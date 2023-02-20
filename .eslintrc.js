@@ -18,7 +18,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {},
+  rules: {
     'ember/no-jquery': 'error',
     'ember/no-new-mixins': 0,
     'ember/no-observers': 0,
