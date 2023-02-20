@@ -1,10 +1,10 @@
-import config from './config/environment';
 import EmberRouter from '@ember/routing/router';
+import config from 'dummy/config/environment';
 
-const Router = EmberRouter.extend({
-  location: config.locationType,
-  rootURL: config.rootURL
-});
+export default class Router extends EmberRouter {
+  location = config.locationType;
+  rootURL = config.rootURL;
+}
 
 Router.map(function() {
   this.route('custom-store');
@@ -23,5 +23,3 @@ Router.map(function() {
   this.route('nested-component');
   this.route('extended');
 });
-
-export default Router;

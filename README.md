@@ -11,6 +11,10 @@ Demo: [ember-infinity.github.io/ember-infinity/](https://ember-infinity.github.i
 Simple, flexible infinite scrolling for Ember CLI Apps.  Works out of the box
 with the [Kaminari Gem](https://github.com/amatsuda/kaminari.git).
 
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v12 or above
+
 Table of Contents:
 
 + [Installation](#installation)
