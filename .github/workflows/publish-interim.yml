@@ -27,10 +27,8 @@ jobs:
         with:
           version: 9
       - name: Install Dependencies
-        run: <%= pnpm ? 'pnpm install --frozen-lockfile' : yarn ? 'yarn install --frozen-lockfile' : 'npm ci' %>
       - run: pnpm install --frozen-lockfile
       - uses: kategengler/put-built-npm-package-contents-on-branch@v2.0.0
         with:
           branch: interim-dist
           token: ${{ secrets.GITHUB_TOKEN }}
-          working-directory: '<%= addonInfo.location %>'
