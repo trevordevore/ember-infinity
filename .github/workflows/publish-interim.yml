@@ -27,7 +27,7 @@ jobs:
         with:
           version: 9
       - name: Install Dependencies
-      - run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - uses: kategengler/put-built-npm-package-contents-on-branch@v2.0.0
         with:
           branch: interim-dist
